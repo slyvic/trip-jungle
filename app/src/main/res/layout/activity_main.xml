@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/main_menu"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="20sp"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_navw"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/main_profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:riv_corner_radius="20sp"
+            android:src="@drawable/ic_account_circle_white_24dp__1_"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="20sp" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateFilterContainer"
+        app:boxBackgroundColor="@color/background"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:endIconTint="@color/white"
+        app:endIconDrawable="@drawable/ic_caret_down_fill_white">
+
+        <AutoCompleteTextView
+            android:id="@+id/datesFilterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            app:boxBackgroundColor="@color/background"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:paddingBottom="10sp"
+            android:paddingTop="10dp"
+            android:inputType="none"
+            tools:text="All Time"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/pin_icon"/>
+        <EditText
+            android:id="@+id/main_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:hint="@string/buscar_un_destion"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp"
+            android:paddingBottom="15sp"
+            android:textColor="@color/gray"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animationResolution="@android:integer/config_mediumAnimTime"
+        android:indeterminateTint="#FFFEFE"
+        android:progressTint="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recycle"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

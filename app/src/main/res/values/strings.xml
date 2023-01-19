@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TripJungle</string>
+    <string name="tripjungle">TripJungle</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="contransena">Contraseña</string>
+    <string name="forgetpassword">¿Olvidaste tu contraseña?</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="no_tienes_una_cuenta">¿No tienes una cuenta?</string>
+    <string name="already_account">¿Ya tienes una cuenta?</string>
+    <string name="registrate">Registrate</string>
+    <string name="login">inicia sesión</string>
+    <string name="nombre">Nombre</string>
+    <string name="celular">Celular</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="buscar_un_destion">Buscar un destino</string>
+    <string name="home">Home</string>
+    <string name="asistente">Asistente</string>
+    <string name="ar">AR</string>
+    <string name="perfil">Perfil</string>
+    <string name="salir">Salir</string>
+    <string name="puntaje">Puntaje</string>
+    <string name="_4_5">4.5</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="alertas">Alertas</string>
+    <string name="aventura">Aventura</string>
+    <string name="cultural">Cultural</string>
+    <string name="califica_este_lugar">Califica este lugar</string>
+    <string name="explora">Explora</string>
+    <string name="continuar_con_google">Continuar con Google</string>
+    <string name="para_poder_obtener_una_nueva_contrase_a">para poder obtener una nueva contraseña,</string>
+    <string name="introduce_tu_correo_electr_nico">Introduce tu correo electrónico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string name="alexa_api">https://avs-alexa-na.amazon.com</string>
+    <string name="alexa_api_version">v20160207</string>
+
+</resources>

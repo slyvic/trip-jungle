@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgetpassword"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/para_poder_obtener_una_nueva_contrase_a"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/introduce_tu_correo_electr_nico"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="4sp"/>
+
+    <EditText
+        android:id="@+id/forgot_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="60dp"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="15sp"
+        android:textColor="@color/white"
+        android:hint="@string/correo_electronico"
+        android:textColorHint="@color/white"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/forgot_button"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botton_border"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:padding="17sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="CONFIRMAR"/>
+
+</LinearLayout>

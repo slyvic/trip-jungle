@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/profile_menu"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="20sp"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_navw"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perfil"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                app:riv_corner_radius="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_account_circle_white_24dp__1_"/>
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:elevation="10dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardCornerRadius="100dp"-->
+<!--                card_view:cardPreventCornerOverlap="false">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/profile_picture"-->
+<!--                    android:src="@drawable/me"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="110dp"/>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/profile_camera"
+                android:layout_width="25dp"
+                android:layout_height="25sp"
+                app:riv_corner_radius="15sp"
+                android:background="@drawable/camera_border"
+                android:padding="3dp"
+                android:src="@drawable/ic_camera"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-30dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"/>
+                    <EditText
+                        android:id="@+id/profile_name"
+                        android:text="Franco Esteban"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/gray"
+                        android:enabled="false"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/gray"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/set_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_pen"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Celular"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"/>
+                    <EditText
+                        android:id="@+id/profile_number"
+                        android:text="920868220"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/gray"
+                        android:textSize="16sp"
+                        android:enabled="false"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/gray"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/set_profile_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_pen"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Correo"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"/>
+                    <EditText
+                        android:id="@+id/profile_email"
+                        android:text="franco@gmail.com"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/gray"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:backgroundTint="@color/gray"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/notificaciones"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/profile_switch"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    app:on="false"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/alertas"
+                android:textColor="@color/white"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20sp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/profile_radioGroup"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/aventura"/>
+
+                <CheckBox
+                    android:shadowRadius="45"
+                    android:buttonTint="@color/yellow"
+                    android:layout_marginStart="20sp"
+                    android:id="@+id/profile_radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginStart="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/cultural"/>
+
+                <CheckBox
+                    android:buttonTint="@color/yellow"
+                    android:layout_marginStart="20sp"
+                    android:id="@+id/profile_radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

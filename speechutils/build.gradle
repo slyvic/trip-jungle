@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    // Required -- JUnit 4 framework
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'com.android.support:support-annotations:27.1.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    // Optional -- Hamcrest library
+    androidTestImplementation 'org.hamcrest:hamcrest-library:1.3'
+
+    implementation 'commons-io:commons-io:2.5'
+}
+
+android {
+    compileSdk 32
+
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    namespace 'ee.ioc.phon.android.speechutils'
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/infoView"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/dataview_background"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/webViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="123"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/infoClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_x" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_max="200dp"
+        android:animationCache="true"
+        android:clipToPadding="false" />
+
+</LinearLayout>
+
+    <!--<WebView-->
+<!--    android:id="@+id/webview"-->
+<!--    android:background="@color/blacko"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android" />-->
+
+<!--<LinearLayout-->
+<!--android:id="@+id/infoView"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="194dp"-->
+<!--android:layout_alignParentStart="true"-->
+<!--android:layout_alignParentTop="true"-->
+<!--android:layout_alignParentEnd="true"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_marginStart="171dp"-->
+<!--android:layout_marginLeft="150dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:layout_marginEnd="14dp"-->
+<!--android:layout_marginBottom="527dp"-->
+<!--android:background="@drawable/dataview_background"-->
+<!--android:orientation="vertical"-->
+<!--android:padding="10sp"-->
+<!--android:visibility="gone"-->
+<!--tools:ignore="WebViewLayout">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/webViewTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="123"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20sp" />-->
+
+<!--    <Space-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_weight=".1" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/infoClose"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:src="@drawable/ic_x" />-->
+<!--</LinearLayout>-->
+
+<!--<WebView-->
+<!--    android:id="@+id/webview"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:animationCache="true"-->
+<!--    android:clipToPadding="false" />-->
+
+<!--</LinearLayout>-->
+<!--<TextView-->
+<!--    android:id="@+id/txtView"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:textSize="50dp"-->
+<!--    android:background="@color/design_default_color_primary"-->
+<!--    android:text="Hi how are you?" />-->
